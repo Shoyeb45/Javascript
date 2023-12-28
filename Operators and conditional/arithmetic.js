@@ -1,5 +1,6 @@
 //Simple use of arithmetic operator
 
+console.log("Arithmetic");
 let a=8;
 let b=5;
 //Same as mathematics
