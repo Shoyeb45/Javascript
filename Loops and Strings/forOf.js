@@ -1,0 +1,7 @@
+let name = prompt("Enter your name");
+let count = 0;
+for (let i of name){
+    console.log("i=",i);
+    count++;
+}
+console.log("Number of characters in your name.",count);

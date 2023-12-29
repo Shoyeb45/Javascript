@@ -6,5 +6,5 @@ for(let i=1; i<=n ; i++){
     console.log(i);
     sum += i;
 }
-
+    
 console.log("Sum is:",sum);
