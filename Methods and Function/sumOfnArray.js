@@ -4,7 +4,7 @@ let n = prompt("Enter number")
 let number = [];
 
 for(let i = 1; i<=n ; i++){
-    number[i] = i;
+    number[i-1] = i;
 }
 
 let i = 1;
