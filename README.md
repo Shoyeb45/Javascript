@@ -10,3 +10,13 @@ Starting Java Script from today.  So, here I am going to upload my learning phas
 4. Operators 
 
 5. conditional statement
+
+6. Loops
+
+7. Array
+
+8. Strings
+
+9. Methods 
+
+10. Function

@@ -38,7 +38,7 @@ console.log(a.replaceAll("m", "l")); //using replaceAll
 
 //charAt()
 
-console.log(lowerString.charAt(3)); //A sholud be printed
+console.log(lowerString.charAt(3)); //Refers to the A
 
 
 
