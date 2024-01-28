@@ -1,6 +1,9 @@
 # JS1
-Starting Java Script from today.  So, here I am going to upload my learning phase code of JS .
+Starting Java Script from Dec 8, 2023.  So, here I am going to upload my learning phase code of JS .
 <br/>
+
+#Topics:
+
 1. Data types 
 
 2. Variables
@@ -20,3 +23,6 @@ Starting Java Script from today.  So, here I am going to upload my learning phas
 9. Methods 
 
 10. Function
+
+11. Document Object Model
+
