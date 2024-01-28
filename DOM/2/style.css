@@ -1,0 +1,12 @@
+#notion {
+        left: 10%;
+        height: 50;
+        width: 100;
+        border: 2px solid blueviolet;
+        background-color: black;
+        color: white;
+        font-size: larger;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        
+}
