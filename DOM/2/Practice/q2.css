@@ -1,0 +1,9 @@
+.para { 
+       color: red;
+       border: 1px solid black;
+}
+
+.newPara {
+    background-color:blanchedalmond;
+    text-align: center;
+}
