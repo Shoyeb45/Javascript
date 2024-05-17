@@ -1,5 +1,5 @@
-let a = Number.MIN_VALUE
-console.log(a);
+let a = Number.MAX_VALUE
+console.log(a + 2);
 
 function f(x) {
     return x**2;
@@ -13,7 +13,7 @@ function facto(x) {
     return x * facto(x - 1);
 }
 
-h = prompt("Enter number:")
+h = 12
 let c = f(Number(h));
 console.log(c);
 let g = facto(12);
