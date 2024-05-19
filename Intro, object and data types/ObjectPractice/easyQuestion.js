@@ -10,3 +10,10 @@ dog.bark = () => {
 }
 
 console.log(`Name : ${dog.name}\nLeg : ${dog.leg}\nColor : ${dog.color}\n${dog.name} is hungry that's why he is doing ${dog.bark()}`);
+
+dog.breed = "Unknown";
+dog.getInfo = () => {
+    return dog;
+}
+
+console.log(dog.getInfo());
