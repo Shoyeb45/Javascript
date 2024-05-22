@@ -5,3 +5,6 @@ let newNumber = number.map((val) => {  //Created new array
 });
 console.log(newNumber)
 
+const newArray = number.map( (num) => num * 3)
+console.log(newArray);
+
