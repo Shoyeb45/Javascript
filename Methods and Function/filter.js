@@ -15,12 +15,17 @@ else{
 }
 }
 
-let number = [13, 15, 17, 2, 3]
+let number = [13, 15, 17, 2, 3, 1, 9, ]
 
 let primeNumber = number.filter( (val) => {
        return isPrime(val) == 1;
 });
 
+console.log(primeNumber);
 for(val of primeNumber){
     console.log(val);
 }
+
+const country = ["Finland", "Ireland", "Pakistan"];
+const arr = country.filter( (x) => x.endsWith("land"));
+console.log(arr);
