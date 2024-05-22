@@ -15,3 +15,8 @@ city.forEach(val => {
 city.forEach((val, idx, arr) =>{
     console.log("The element",idx+1,"is",val,"in an array",arr);
 });
+
+
+let o = [1, 5, 7, 9, 17]
+o.forEach((x) => console.log(x))
+
