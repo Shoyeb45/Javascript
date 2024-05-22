@@ -22,3 +22,8 @@ let largest = array.reduce((prev, curr) => {
 })
 
 console.log("Largest number in array:", largest)
+
+const numb = [1, 2, 3, 4, 5];
+let Sum = 0;
+let resu = numb.reduce( (acc, curr) => acc + curr)
+console.log(resu);
