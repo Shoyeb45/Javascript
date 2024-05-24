@@ -68,13 +68,20 @@ let {width, height, area, perimeter} = rectangle;
 // 4. 
 for(obj of users) {
     let {name, scores, skills, age} = obj;
+    console.log(`${name}, ${scores}, [${skills}], ${age}`);
 }
 
 // 5.
 let name = "";
-for(obj of users) {
+// for(obj of users) {
+//     if(obj.skills.length < 2) {
+//         name = obj.name;
+//     }
+// }
+
+users.forEach((obj) => {
     if(obj.skills.length < 2) {
-        name = obj.name;
+        name = obj.name
     }
-}
+})
 console.log(name);
