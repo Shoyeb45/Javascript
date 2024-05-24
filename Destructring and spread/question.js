@@ -71,17 +71,27 @@ for(obj of users) {
     console.log(`${name}, ${scores}, [${skills}], ${age}`);
 }
 
-// 5.
-let name = "";
-// for(obj of users) {
-//     if(obj.skills.length < 2) {
-//         name = obj.name;
-//     }
-// }
-
-users.forEach((obj) => {
+// // 5.
+// let names = users.filter((obj) => {
+//     return 
+// });
+let name = ""; 
+for(obj of users) {
     if(obj.skills.length < 2) {
-        name = obj.name
+        name = obj.name;
     }
-})
-console.log(name);
+}
+
+// users.forEach((obj) => {
+//     if(obj.skills.length < 2) {
+        
+//     }
+// })
+// console.log(name);
+
+// let names = users.map((obj) => {
+//     if(obj.skills.length < 2)
+//         return obj.name;
+// })
+
+// console.log(names);
