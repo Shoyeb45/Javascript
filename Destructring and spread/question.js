@@ -47,11 +47,15 @@ const users = [
 const constants = [2.72, 3.14, 9.81, 37, 100]
 const countries = ['Finland', 'Estonia', 'Sweden', 'Denmark', 'Norway']
 
+// 1.
 const [e, pi, g, humanBodyTemp, waterBoilingTemp] = constants;
 console.log(`Euler's Constant = ${e},\nPi = ${pi}\nGravitational constant = ${g},\nHumanBody Temp = ${humanBodyTemp}, Water Boiling constant = ${waterBoilingTemp}`);
 
+// 2.
 const [ fin, est, sw, den, nor] = countries;
 
+
+// 3.
 const rectangle = {
   width: 20,
   height: 10,
@@ -61,11 +65,12 @@ const rectangle = {
 
 let {width, height, area, perimeter} = rectangle;
 
-
+// 4. 
 for(obj of users) {
     let {name, scores, skills, age} = obj;
 }
 
+// 5.
 let name = "";
 for(obj of users) {
     if(obj.skills.length < 2) {
