@@ -1,0 +1,21 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40vh;
+}
+
+button {
+    font-size:2rem;
+    align-self: center;
+    width: 400px;
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #000;
+}
+h1 {
+    text-align: center;
+}
