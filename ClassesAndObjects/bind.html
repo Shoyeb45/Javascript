@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bind Example</title>
+</head>
+<body>
+    
+    <button>Click me</button>
+
+    <script>
+        class React {
+            constructor() {
+                this.framwork = "node";
+                this.server = "https://localhost/3000/"
+                
+                // If we don't use bind then we'll not be able to access `server` in `handlClick()` function. It will give undefined 
+                document.querySelector("button").addEventListener("click", this.handleClick.bind(this))
+            }
+
+            handleClick() {
+                console.log("button clicked");
+                console.log(`${this.server}`);
+                
+            }
+        }
+        const app = new React();
+    </script>
+</body>
+</html>
