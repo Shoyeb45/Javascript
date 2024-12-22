@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Timeout ex</title>
+</head>
+<body>
+    <h2>Example of async</h2>
+    <h1>Title</h1>
+    <button id="stop">Stop changing of title</button>
+
+    <script>
+        const changeTitle = () => {
+            document.querySelector("h1").innerHTML = "Changed title after 2 sec";
+            console.log("Changed h1 title");
+        };
+
+        const setTimeoutRef = setTimeout(changeTitle, 2000);
+
+        // Now we don't want that title should change
+        const button = document.getElementById("stop");
+        button.addEventListener("click", 
+            (event) => {
+                clearTimeout(setTimeoutRef);
+                console.log("Stopped changing of title");   
+            }
+        )
+    </script>
+</body>
+</html>
