@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set-inteval example</title>
+</head>
+<body>
+    <h2>Set interval example</h2>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+    <script>
+        const btnStart = document.querySelector("#start");
+        const btnStop = document.querySelector("#stop");
+        
+        const printHi = (msg) => {
+            console.log(msg, Date.now());
+        };
+        
+        let setIntervalRef; 
+        btnStart.addEventListener(
+            "click",
+            (event) => {
+                console.log("Printing on console has started");
+                setIntervalRef = setInterval(printHi, 2000, "Hello world!");
+            }
+        );
+        btnStop.addEventListener(
+            "click",
+            (event) => {
+                clearInterval(setIntervalRef);
+                console.log("Printing has stopped");
+            }
+        );
+
+    </script>
+</body>
+
+</html>
