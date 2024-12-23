@@ -128,3 +128,28 @@ promiseFive
         console.log("Some error\n" + err);
     }
 );
+
+
+// Ex-6
+const promiseSix = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        console.log("Async task-6, wait time : 6 sec");
+        resolve("Something...");
+    }, 6000);
+});
+
+// Use of finally : it is used to show that the promise has completed, either `then` or `catch`
+promiseSix
+    .then((data) => {
+        console.log(data);
+        console.log("Async task-6 completed");
+        
+    })
+    .catch((error) => {
+        console.log(error);
+    })
+    .finally(() => {
+        console.log("finally part : The Fifth-promise is either resolved or rejected\n");      
+    }
+);
+
