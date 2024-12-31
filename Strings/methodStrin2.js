@@ -2,12 +2,15 @@ let a = "My name is Shoyeb Ansari";
 
 // 1. substr
 console.log(a.substr(0, 4));
+console.log(a.substr(0,5));
 
 // 2. substring
 console.log(a.substring(1, 4));
+console.log(a.substring(1, 5));
 
 // 3. includes()
 console.log(a.includes("Shoyeb"));
+console.log(a.includes("shoyeb"));
 
 // 4. replace()
 console.log(a.replace("Shoyeb Ansari", "Prakhar Sahu"));
