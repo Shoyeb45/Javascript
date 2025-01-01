@@ -50,3 +50,8 @@ console.log("\nSlice\n");
 
 console.log(mangaka.slice(1, 2));
 console.log("Original array:\n",mangaka)
+
+// 8. splice
+console.log(manga);
+console.log("after using splice\n", manga.splice(1,3));
+console.log("Original array:\n",manga)
