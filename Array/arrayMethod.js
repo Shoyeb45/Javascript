@@ -26,6 +26,9 @@ let mangaka = ["Gege", "Araki", "Oda", "Inoue"];
 console.log(manga.concat(mangaka)); //Also we can add  multiple array
 
 let mangaka1 = ["Hara"];
+// another method by using spread operator
+let mangaka2 = [...mangaka, ...mangaka1];
+console.log(mangaka2);
 console.log(manga.concat(mangaka, mangaka1));
 
 //5. unshift
