@@ -1,0 +1,58 @@
+// Singleton object
+let user = new Object();
+
+user.name = "shoyeb";
+user.email = "shoyeb@gmail.com";
+
+console.log(user);
+
+let detail = {
+    state: "Gujarat",
+    district: "Kutch",
+    city: "Bhuj",
+    mobileNumber: "9327156940"
+};
+
+console.log(detail);
+
+
+// let's combine both of them
+
+// wrong syntax
+// let fullDetail = { user, detail };
+// console.log(fullDetail);
+
+// 1. using spread operator
+let fullDetail = { ...user, ...detail };
+console.log(fullDetail);
+
+// 2. assign
+// fullDetail = Object.assign(user, detail); // all values are going in `user`
+// console.log(fullDetail);
+// console.log(user);
+fullDetail = Object.assign({}, user, detail); // all values are going in `user`
+console.log(fullDetail);
+console.log(user); // now user is not modified
+
+// Some more methods
+
+// keys: returs the all keys in array form
+const keys = Object.keys(user);
+console.log(keys);
+
+// keys: returs the all keys in array form
+const values = Object.values(fullDetail);
+console.log(values);
+
+// entries: will return array with [key, value]
+const arr = Object.entries(detail);
+console.log(arr);
+
+
+console.log(user);
+
+// Check if the given key is present or not in object
+console.log(user.hasOwnProperty('name'));
+console.log(user.hasOwnProperty("mail"));
+
+console.log(user.toString());
