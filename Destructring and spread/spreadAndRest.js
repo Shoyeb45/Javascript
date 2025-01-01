@@ -11,3 +11,10 @@ function tp(...args) {
 }
 
 tp(1, 3,3 , 3, 3,3, 3, 'e', 'Shoyeb');
+
+// by default arguments will be present in function
+function f() {
+    console.log(arguments);
+}
+
+f(1,2,2,3,3)
