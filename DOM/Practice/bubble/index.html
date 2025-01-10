@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #grandparent {
+            height: 85vh;
+            width: 85vh;
+            background-color: pink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #parent {
+            height: 55vh;
+            width: 55vh;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #child {
+            height: 35vh;
+            width: 35vh;
+            background-color: yellow;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="grandparent">
+        <div id="parent">
+            <div id="child">
+
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    document.querySelector("body").addEventListener(
+        "click", 
+        () => alert("Body clicked"),
+        true
+    );
+    document.querySelector("#grandparent").addEventListener(
+        "click", 
+        () => alert("Grandparent clicked"),
+        true
+    );
+    document.querySelector("#parent").addEventListener(
+        "click", 
+        () => alert("Parent clicked"),
+        true
+    );
+    document.querySelector("#child").addEventListener(
+        "click", 
+        () => alert("Child clicked"),
+        true
+    );
+</script>
+</html>
