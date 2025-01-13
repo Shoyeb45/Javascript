@@ -47,23 +47,22 @@
 <script>
     document.querySelector("body").addEventListener(
         "click", 
-        () => alert("Body clicked"),
-        true
+        () => alert("Body clicked")
     );
     document.querySelector("#grandparent").addEventListener(
         "click", 
-        () => alert("Grandparent clicked"),
-        true
+        () => alert("Grandparent clicked")
     );
     document.querySelector("#parent").addEventListener(
         "click", 
-        () => alert("Parent clicked"),
-        true
+        () => alert("Parent clicked")
     );
     document.querySelector("#child").addEventListener(
         "click", 
-        () => alert("Child clicked"),
-        true
+        (event) => {
+            event.stopPropagation();
+            alert("Child clicked");
+        }
     );
 </script>
 </html>
