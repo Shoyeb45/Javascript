@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Time Pass</title>
+    <style>
+        body, #main-div {
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body class="container-fluid">
+
+    <div id="main-div" class="d-flex align-items-center justify-content-center">
+        <form action="" class="text-white form-control w-25 d-flex align-items-center justify-content-center flex-column gap-3 h-50 bg-dark" >
+            <div class="input-group-sm">
+                <span > Enter Email </span> 
+                <input type="text" class="form-control" name="textEmail">
+            </div>
+            
+            <div class="input-group-sm">
+                <span >Password</span>
+              <input type="password" class="form-control" name="textPassword">
+            </div>
+            <p>Don't have account? <a href="./register.html" class="link-info">Register</a></p>
+            <button class="btn btn-info ">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.querySelector("form").addEventListener("submit", (event) => {
+            event.preventDefault();
+
+            const formData = new FormData(event.target);
+            const user = {
+                email : formData.get("textEmail"),
+                password : formData.get("textPassword")
+            }
+            console.log(user);
+            
+            const passwordExisting = localStorage.getItem(user.email);
+            if (!passwordExisting) {
+                console.log("User does not exist");
+            }
+            const userObject = JSON.parse(passwordExisting);
+
+            console.log("passwd  : " + userObject.password);
+            console.log(user.password);
+            
+            if (userObject.password !== user.password) {
+                alert("Invalid Password")
+                return;
+            }
+            alert("Logged in successfully")
+        });
+    </script>
+</body>
+</html>

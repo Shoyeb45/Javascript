@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter expression"> <br>
+    <button>Submit</button>
+    <p style="display: none;"></p>
+</body>
+
+<script>
+    const input = document.querySelector("input");
+    
+    document.querySelector('button').addEventListener("click", fun);
+
+    
+    function fun() {
+        try {
+            console.log(input.value);
+            
+            const res = eval(input.value);
+            document.querySelector("p").style.display = "block";
+            document.querySelector("p").innerHTML = `${input.value} = ${res}`
+    
+        } catch (error) {
+            document.querySelector("p").style.display = "block";
+            document.querySelector("p").innerHTML = `${error.name} : ${error.message}`
+    
+        }
+
+    }
+</script>
+</html>

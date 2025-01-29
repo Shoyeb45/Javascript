@@ -6,7 +6,7 @@ function divide(a, b) {
 }
 
 try {
-    const res = divide(12, 12341412);
+    const res = divide(12, 0);
     console.log(`12 / 12341412 = ${res}`);
 } catch (error) {
     console.log(error.message);

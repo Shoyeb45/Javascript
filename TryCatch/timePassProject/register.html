@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Register</title>
+
+    <style>
+        body {
+            height: 100vh;
+        }
+    </style>
+</head>
+<body class="d-flex align-items-center justify-content-center">
+    <form  method="get" class="form-control text-white w-25 d-flex align-items-center justify-content-center flex-column gap-3 h-50 bg-dark">
+       <div class="input-group-sm">
+            <span>Name</span>
+            <input type="text" name="textName" class="form-control" required>
+       </div>
+
+       <div class="input-group-sm">
+            <span>Email</span>
+            <input type="email" name="textEmail" class="form-control" required>
+       </div> 
+
+       <div class="input-group-sm">
+            <span>Password</span>
+            <input type="password" name="textPassword" class="form-control" required>
+       </div> 
+
+       <p>Already have an account? <a href="./index.html" class="link-info"> LogIn</a></p>
+       <button class="btn btn-info" type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.querySelector("form").addEventListener("submit", (event) => {
+            event.preventDefault();
+            const formData = new FormData(event.target);
+            const user = {
+                name : formData.get("textName"),
+                email : formData.get("textEmail"),
+                password : formData.get("textPassword")
+            }
+            console.log(user);
+            
+            localStorage.setItem(user.email, JSON.stringify(user));
+        });
+    </script>
+</body>
+</html>
