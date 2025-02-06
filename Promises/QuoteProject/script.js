@@ -51,3 +51,8 @@ async function generateNewQuote(event) {
         console.log(error);
     }
 }
+
+function clear() {
+    quoteArea.innerHTML = "";
+}
+document.querySelector("#clear").addEventListener("click", clear);

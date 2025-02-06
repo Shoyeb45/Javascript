@@ -23,7 +23,20 @@
             padding: 10px;
             border: 2px solid black;
         }
-        
+
+        button {
+            padding: 3px;
+            border: none;
+            border-radius: 6px;    
+            color: white;
+            background-color: black;
+        }
+
+        .inner-box {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
     </style>
 </head>
 <body>
@@ -32,10 +45,11 @@
         <div id="quote-area">
             -- Press on button to generate new quote --
         </div> 
-        <div>
+        <div class="inner-box">
             <button id="quote-btn"> Generate Quote </button>
             <button id="automate-quote"> Automate quote </button>
             <button id="stop-quote"> Stop Generating quote </button>
+            <button id="clear">Clear</button>
         </div>
 
     </div>
