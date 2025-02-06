@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Update</title>
+
+    <style>
+        .box {
+            display: flex;
+            flex-direction: column;
+            padding: 12px;
+            gap: 10px;
+        }
+        .box #quote-area {
+            text-align: center;
+            align-items: center;
+        }
+        .box button {
+            width: 100px;
+        }
+        #quote-area {
+            padding: 10px;
+            border: 2px solid black;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <div id="quote-area">
+            -- Press on button to generate new quote --
+        </div> 
+        <div>
+            <button id="quote-btn"> Generate Quote </button>
+            <button id="automate-quote"> Automate quote </button>
+            <button id="stop-quote"> Stop Generating quote </button>
+        </div>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
