@@ -1,4 +1,4 @@
-// Arrow function but not actual function
+// Arrow function but not actual arrow function
 
 const print = function() {
     console.log("This function behaves like arrow function\n");

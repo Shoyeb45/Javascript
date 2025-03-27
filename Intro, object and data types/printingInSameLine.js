@@ -44,4 +44,5 @@ newArr.forEach(element => {
 newArr = newArr.map(ele => 
     ele *= 2
 )
+process.stdout.write("Hii something nice\n")
 console.log(newArr);

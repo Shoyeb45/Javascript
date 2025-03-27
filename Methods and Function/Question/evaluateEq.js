@@ -20,5 +20,10 @@ const quadraticEqSolve = (a, b, c) => {
     }
     return [x1, x2];
 }
-let sol = quadraticEqSolve(9, 6, 1);
+
+let a = -9, b = 6, c = 1;
+let sol = quadraticEqSolve(a, b, c);
+console.table({ a: a, b: b, c : c});
 console.log(`${sol[0]} \n${sol[1]}`);
+
+console.log(`Sum of roots: ${sol[0] * sol[1]}`);

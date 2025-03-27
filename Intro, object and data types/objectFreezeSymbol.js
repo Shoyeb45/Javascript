@@ -10,8 +10,10 @@ console.log(typeof user);
 // how we can define symbol as an object key
 const sym = Symbol("hii");
 
-user[sym] = "symbol"; // key will be symbol
 user.sym = "af";      // key will be not symbol
+
+console.log(user);
+user[sym] = "symbol"; // key will be symbol
 
 console.log(user);
 

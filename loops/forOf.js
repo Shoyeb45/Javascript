@@ -1,4 +1,4 @@
-let name = prompt("Enter your name");
+let name = "Hii";
 let count = 0;
 for (let i of name){
     console.log("i=",i);

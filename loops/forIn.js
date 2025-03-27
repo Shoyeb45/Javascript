@@ -9,3 +9,5 @@ const info = {
 for(let i in info){
     console.log("Key:", i, "Value:",info[i]);
 }
+
+console.log(...Object.entries(info));

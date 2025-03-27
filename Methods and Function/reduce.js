@@ -10,7 +10,7 @@ const sum = array.reduce((prev, curr) => {
 
 const mult = array.reduce((prev, curr) => {
     return prev*curr; 
-})
+}, 1)
 
 console.log("Addition",sum)
 console.log("Multiplication:",mult)
